@@ -14,7 +14,7 @@ A microcontroller project utilizing a raspberry pi and computer vision to make a
 
 ## Connection Chart
 ```mermaid
-graph LF;
+graph LR;
 A[Arduino]
 B[Rpi02W]
 C[Laptop]
