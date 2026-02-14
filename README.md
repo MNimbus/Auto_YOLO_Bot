@@ -10,7 +10,7 @@ A microcontroller project utilizing a raspberry pi and computer vision to make a
 ## Tech Stack 
 * **ATMega328P Microcontroller in the form of standard Arduino Uno**
 * **Raspberry Pi zero2w, acting as the camera streamer**
-* **Languages: C++, Python**
+* **Languages used in this project C++ / Python**
 
 ## Connection Chart
 ```mermaid
@@ -62,7 +62,7 @@ J -- Object no longer closer than 15cm --> B
 	
 
 	[]UART
-		[]take input reading from the tx or rx pin and use this information to to determine motor speed 
+		[]take input reading from the rx pin  
 []Raspberry pi:
 	[]run camera
 	[]stream video over udp 
