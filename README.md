@@ -5,12 +5,24 @@
 ---
 
 ## Overview
-This repo contains the C++ code for driving the arduino, as well as the python scripts for integrating the CV through a raspberry pi
+A microcontroller project utilizing a raspberry pi and computer vision to make a robot follow other robots.
 
 ## Tech Stack 
 * **ATMega328P Microcontroller in the form of standard Arduino Uno**
 * **Raspberry Pi zero2w, acting as the camera streamer**
 * **Languages used in this project C++ / Python**
+
+## Connection Chart
+```
+graph LF;
+A[Arduino]
+B[Rpi02W]
+C[Laptop]
+B -- UART --> A
+C -- UDP --> B
+B -- UDP Video stream --> C
+A -- Ultrasonic --> A
+```
 
 ## Logic Diagram
 ```mermaid
@@ -24,6 +36,7 @@ J[Stop - Interrupt - Blink Lights]
 B -- Object closer Than 15cm --> J
 J -- Object no longer closer than 15cm --> B
 ```
+
 ## Notes on the techincal execution and progress:
 <pre>
 []Arduino:	
