@@ -15,8 +15,14 @@ This repo contains the C++ code for driving the arduino, as well as the python s
 ## Logic Diagram
 ```mermaid
 graph TD; 
-A[Idle - No object detected]-->B
-D[Drvie - Object detected] -->E
+A[Idle - No object detected] --> C[Search mode - Incrementally turn to the right]
+B[Object detected - Drive] --> E[Side of object]
+C --> B
+E -- Left --> G[Right motors 100%, left motors 50%]
+E -- Right --> H[Left motors 100%, right motors 50%]
+J[Stop - Interrupt - Blink Lights]
+B -- Object closer Than 15cm --> J
+J -- Object no longer closer than 15cm --> B
 ```
 ## Notes on the techincal execution and progress:
 <pre>
