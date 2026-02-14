@@ -14,7 +14,7 @@ This repo contains the C++ code for driving the arduino, as well as the python s
 * **Languages used in this project C++ / Python**
 
 ## Notes on the techincal execution and progress:
-
+<pre>
 []Arduino:	
 	[]proximity sensor
 		[]send pulse to echo pin from the board
@@ -49,3 +49,4 @@ This repo contains the C++ code for driving the arduino, as well as the python s
 	message protocol
 		-if i see robot drive(D), if not search(S)
 		-depending on where the robot is either drive right(R) or drive left(L) 
+</pre>
