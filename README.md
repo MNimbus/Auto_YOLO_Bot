@@ -15,8 +15,8 @@ This repo contains the C++ code for driving the arduino, as well as the python s
 ## Logic Diagram
 ```mermaid
 graph TD; 
-A[Idle(No object detected)]-->B
-D[Drvie(Object detected)] -->E
+A[Idle - No object detected]-->B
+D[Drvie - Object detected] -->E
 ```
 ## Notes on the techincal execution and progress:
 <pre>
