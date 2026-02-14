@@ -13,7 +13,7 @@ A microcontroller project utilizing a raspberry pi and computer vision to make a
 * **Languages used in this project C++ / Python**
 
 ## Connection Chart
-```
+```mermaid
 graph LF;
 A[Arduino]
 B[Rpi02W]
