@@ -13,8 +13,9 @@ This repo contains the C++ code for driving the arduino, as well as the python s
 * **Languages used in this project C++ / Python**
 
 ## Logic Diagram
-graph TD; A-->B;
-
+```mermaid
+graph TD; A-->B
+```
 ## Notes on the techincal execution and progress:
 <pre>
 []Arduino:	
