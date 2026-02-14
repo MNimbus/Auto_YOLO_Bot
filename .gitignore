@@ -3,3 +3,9 @@ build/
 .hex
 .vscode
 .exe
+# Microchip Studio Junk
+Debug/
+Release/
+*.atdf
+*.user
+.vs/
