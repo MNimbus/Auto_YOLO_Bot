@@ -21,6 +21,4 @@
 #define MOTOR_THREE_PIN		PD7
 #define MOTOR_FOUR_PIN		PD8
 
-
-
 #endif
