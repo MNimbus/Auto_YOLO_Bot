@@ -120,12 +120,29 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="config.hpp">
+    <None Include="include\config.hpp">
       <SubType>compile</SubType>
+      <Link>config.hpp</Link>
+    </None>
+    <None Include="include\motors.hpp">
+      <SubType>compile</SubType>
+      <Link>motors.hpp</Link>
+    </None>
+    <None Include="include\ultra.cpp">
+      <SubType>compile</SubType>
+      <Link>ultra.cpp</Link>
+    </None>
+    <None Include="include\ultra.hpp">
+      <SubType>compile</SubType>
+      <Link>ultra.hpp</Link>
     </None>
     <None Include="src\main.cpp">
       <SubType>compile</SubType>
       <Link>main.cpp</Link>
+    </None>
+    <None Include="src\motors.cpp">
+      <SubType>compile</SubType>
+      <Link>motors.cpp</Link>
     </None>
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />

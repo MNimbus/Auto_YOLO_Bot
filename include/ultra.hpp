@@ -1,8 +1,8 @@
-#ifndef PROXIMITY_SENSOR_HPP
-#define PROXIMITY_SENSOR_HPP
-
-#include <avr/io.h>
+#ifndef ULTRA_SENSOR_HPP
+#define ULTRA_SENSOR_HPP
 #include "config.hpp"
-#include <util/delay.h>
+
+void init_ultrasonic();
+float get_distance();
 
 #endif

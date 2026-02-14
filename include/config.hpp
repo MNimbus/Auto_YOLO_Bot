@@ -1,14 +1,12 @@
 #ifndef CONFIG_HPP
 #define CONFIG_HPP
 
-#include <avr/io.h>
-
 //--Clock
 #ifndef F_CPU
 #define F_CPU 160000000UL
 
 //--UART
-#define UART_IN				PD0 //RXD
+#define UART_IN				PD0 //RX in from Raspberry Pi
 #define BAUD_RATE 			9600
 
 //--Ultra-pins 
@@ -18,7 +16,7 @@
 //--Motor-pins 
 #define MOTOR_ONE_PIN 		PB2
 #define MOTOR_TWO_PIN		PB3
-#define MOTOR_THREE_PIN		PB4
-#define MOTOR_FOUR_PIN		PB5
+#define MOTOR_THREE_PIN		PD6
+#define MOTOR_FOUR_PIN		PD5
 
 #endif
