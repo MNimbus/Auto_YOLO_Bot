@@ -8,8 +8,8 @@
 #define F_CPU 160000000UL
 
 //--UART
-#define UART_IN				PD0
-#define BAUD_RATE 9600
+#define UART_IN				PD0 //RXD
+#define BAUD_RATE 			9600
 
 //--Ultra-pins 
 #define SONAR_TRIG_PIN 		PB0
