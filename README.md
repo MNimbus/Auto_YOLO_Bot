@@ -10,7 +10,7 @@ A microcontroller project utilizing a raspberry pi and computer vision to make a
 ## Tech Stack 
 * **ATMega328P Microcontroller in the form of standard Arduino Uno**
 * **Raspberry Pi zero2w, acting as the camera streamer**
-* **Languages used in this project C++ / Python**
+* **Languages: C++, Python**
 
 ## Connection Chart
 ```mermaid
