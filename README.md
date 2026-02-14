@@ -2,7 +2,6 @@
 
 >Month long sprint to return this project for a microcontrollers course, and first github project
 
-
 ---
 
 ## Overview
@@ -12,6 +11,9 @@ This repo contains the C++ code for driving the arduino, as well as the python s
 * **ATMega328P Microcontroller in the form of standard Arduino Uno**
 * **Raspberry Pi zero2w, acting as the camera streamer**
 * **Languages used in this project C++ / Python**
+
+## Logic Diagram
+graph TD; A-->B;
 
 ## Notes on the techincal execution and progress:
 <pre>
