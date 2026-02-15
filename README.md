@@ -12,7 +12,7 @@ A microcontroller project utilizing a raspberry pi and computer vision to make a
 * **Raspberry Pi zero2w, acting as the camera streamer**
 * **Languages: C++, Python**
 
-## Connection Chart
+## Flow Chart
 ```mermaid
 graph LR;
 A[Arduino]
