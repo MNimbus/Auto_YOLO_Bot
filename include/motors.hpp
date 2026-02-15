@@ -2,20 +2,23 @@
 #define MOTORS_HPP
 
 #include <avr/io.h>
-#include "Config.hpp>
+#include "config.hpp>
 
 class Motor {
 	private:
-		uint8_t ddr_pin;
-		uint8_t port_pin;
+		volatile uint8_t* port; 				//Pointer to the PORT register
+		volatile uint8_t* ddr;					//Pointer to the DDR register
+		uint8_t pinA;							//The specific bit for direction 1
+		uint8_t pinB;							//The specific bit for direction 2
+	
 	public:
-	Motor(uint8_t pin); //Constructor: Sets up the pins 
+		Motor(volatile uint8_t* port_reg, volatile uint8_t* ddr_reg, uint8_t pA, uint8_t pB); 	
+		// ^^ Constructor
 	
 	//Methods the motor can take 
 	void forward();
 	void backward();
 	void stop();
-	void setSpeed(uint8_t speed);
 };
 
 #endif
