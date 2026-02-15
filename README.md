@@ -40,36 +40,36 @@ J -- Object no longer closer than 15cm --> B
 ## Notes on the techincal execution and progress:
 <pre>
 []Arduino:	
-	[]proximity sensor
-		[]send pulse to echo pin from the board
-		[]take trigger input
-		[]if object say less than 30cm away, interrupt everything 
-		[]else do nothing
+	[x]proximity sensor
+		*send pulse to echo pin from the board
+		*take trigger input
+		*if object say less than 30cm away, interrupt everything 
+		*else do nothing
 
 	[]motors and the code to drive motors
-		[]engage pins, use pwm to adjust motor speed
-		[]header file needs to contain the object prototype
-		[]the main file needs to contain
+		*engage pins, use pwm to adjust motor speed
+		*header file needs to contain the object prototype
+		*the main file needs to contain
 			motorlogic
-			-in follow,if (R), left motors drive ex.100%, 
-			-elif, search(), pulse motors (R) 
-			-sighting, stop and then confirm 
+			*in follow,if (R), left motors drive ex.100%, 
+			*elif, search(), pulse motors (R) 
+			*sighting, stop and then confirm 
 	Main
-	-if not target in sight execute search
-	-when target in sight begin follow
-	-when target in sight and prox sensor less than 30cm, begin greet 
+	*if not target in sight execute search
+	*when target in sight begin follow
+	*when target in sight and prox sensor less than 30cm, begin greet 
 	
 
-	[]UART
-		[]take input reading from the rx pin  
+	[x]UART
+		*take input reading from the rx pin  
 []Raspberry pi:
-	[]run camera
-	[]stream video over udp 
-	[]capture messages from laptop and forward them over uart to arduino
+	*run camera
+	*stream video over udp 
+	*capture messages from laptop and forward them over uart to arduino
 []Laptop
-	-receive a videostream from the raspberry pi
-	-process the video in YOLO11n
+	*receive a videostream from the raspberry pi
+	*process the video in YOLO11n
 	message protocol
-		-if i see robot drive(D), if not search(S)
-		-depending on where the robot is either drive right(R) or drive left(L) 
+		*if i see robot drive(D), if not search(S)
+		*depending on where the robot is either drive right(R) or drive left(L) 
 </pre>
