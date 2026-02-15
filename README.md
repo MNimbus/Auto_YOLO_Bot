@@ -40,12 +40,13 @@ J -- Object no longer closer than 15cm --> B
 ## Notes on the techincal execution and progress:
 
 - [ ] **Arduino:**
+  - [ ] **Main.cpp**
   - [x] **Proximity sensor**
     - send pulse to echo pin from the board
     - take trigger input
     - if object say less than 30cm away, interrupt everything
     - else do nothing
-  - [ ] **Motors and the code to drive motors**
+  - [x] **Motors and the code to drive motors**
     - engage pins, use pwm to adjust motor speed
     - header file needs to contain the object prototype
     - the main file needs to contain **Motorlogic**
