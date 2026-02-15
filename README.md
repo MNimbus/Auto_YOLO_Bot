@@ -47,10 +47,9 @@ J -- Object no longer closer than 15cm --> B
 		[]else do nothing
 
 	[]motors and the code to drive motors
-	
-	[]engage pins, use pwm to adjust motor speed
-	[]header file needs to contain the object prototype
-	[]the main file needs to contain
+		[]engage pins, use pwm to adjust motor speed
+		[]header file needs to contain the object prototype
+		[]the main file needs to contain
 			motorlogic
 			-in follow,if (R), left motors drive ex.100%, 
 			-elif, search(), pulse motors (R) 
