@@ -1,6 +1,7 @@
 #ifndef LOGIC_HPP
 #define LOGIC_HPP
 
+#include <avr/io.h>
 #include "motors.hpp"
 
 void search(Motor& left, Motor& right);
