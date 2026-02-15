@@ -5,7 +5,7 @@
 ---
 
 ## Overview
-A microcontroller project utilizing a raspberry pi and computer vision to make a robot follow other robots.
+A microcontroller project utilizing a raspberry pi, computer vision, and an arduino to make a robot follow other robots.
 
 ## Tech Stack 
 * **ATMega328P Microcontroller in the form of standard Arduino Uno**
