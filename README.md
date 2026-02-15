@@ -39,8 +39,8 @@ J -- Object no longer closer than 15cm --> B
 
 ## Notes on the techincal execution and progress:
 
-- [ ] **Arduino:**
-  - [ ] **Main.cpp**
+- [ ] **Arduino:** (Needs to be tested)
+  - [x] **Main.cpp**
   - [x] **Proximity sensor**
     - send pulse to echo pin from the board
     - take trigger input
