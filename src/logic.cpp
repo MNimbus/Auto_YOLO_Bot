@@ -1,5 +1,6 @@
 #include "logic.hpp"
 #include <util/delay.h>
+#include "config.hpp"
 
 void search(Motor& fL, Motor& bL, Motor& fR, Motor& bR) {
 	//Left Speed 
