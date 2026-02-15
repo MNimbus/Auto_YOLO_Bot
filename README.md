@@ -55,13 +55,13 @@ J -- Object no longer closer than 15cm --> B
       - sighting, stop and then confirm
   - [x] **UART**
     - take input reading from the rx pin
-- [ ] **Raspberry Pi:**
-  - run camera
-  - stream video over udp
-  - capture messages from laptop and forward them over uart to arduino
-- [ ] **Laptop:**
-  - receive a videostream from the raspberry pi
-  - process the video in YOLO11n
-  - **Message protocol:**
-    - if i see robot drive (D), if not search (S)
-    - depending on where the robot is either drive right (R) or drive left (L)
+  - [ ] **Raspberry Pi:**
+    - run camera
+    - stream video over udp
+    - capture messages from laptop and forward them over uart to arduino
+  - [ ] **Laptop:**
+    - receive a videostream from the raspberry pi
+    - process the video in YOLO11n
+    - **Message protocol:**
+      - if i see robot drive (D), if not search (S)
+      - depending on where the robot is either drive right (R) or drive left (L)
