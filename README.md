@@ -38,7 +38,7 @@ J -- Object no longer closer than 15cm --> B
 ```
 
 ## Notes on the techincal execution and progress:
-<pre>
+
 - [ ] **Arduino:**
   - [x] **Proximity sensor**
     - send pulse to echo pin from the board
@@ -64,4 +64,3 @@ J -- Object no longer closer than 15cm --> B
   - **Message protocol:**
     - if i see robot drive (D), if not search (S)
     - depending on where the robot is either drive right (R) or drive left (L)
-</pre>
