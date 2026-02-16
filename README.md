@@ -5,23 +5,27 @@
 ---
 
 ## Overview
-A microcontroller project utilizing a raspberry pi, computer vision, and an arduino to make a robot follow other robots.
+A microcontroller project utilizing the Raspberry Pi AI Camera, Arduino Uno, and a Raspberry Pi zero 2w. 
+The AI camera does the recognition and forwards directions through UART to the arduino, based on 
+bounding box location information. The video feed is also streamed to a laptop, and captured via Gstreamer.
 
 ## Tech Stack 
-* **ATMega328P Microcontroller in the form of standard Arduino Uno**
-* **Raspberry Pi zero2w to stream video to the laptop**
+* **ATMega328P Microcontroller / Arduino Uno**
+* **Raspberry Pi AI Camera**
+* **Raspberry Pi zero2w**
+* **Gstreamer**
 * **Languages: C++, Python**
 
 ## Flow Chart
 ```mermaid
-graph LR;
+graph RL;
 A[Arduino]
 B[Rpi02W]
 C[Laptop]
 B -- UART --> A
-C -- UDP --> B
-B -- UDP Video stream --> C
-A -- Ultrasonic --> A
+B --Video stream --> C
+G([AI Camera]) --> B
+Z([Ultrasensor]) --> A
 ```
 
 ## Logic Diagram
