@@ -1,4 +1,4 @@
-#Auto_Yolo_Robot
+#Auto_CV_Robot
 
 >Month long sprint to return this project for a microcontrollers course, and first github project
 
