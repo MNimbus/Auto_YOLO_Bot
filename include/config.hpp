@@ -1,9 +1,11 @@
 #ifndef CONFIG_HPP
 #define CONFIG_HPP
 
+
 //--Clock
 #ifndef F_CPU
-#define F_CPU 160000000UL
+#define F_CPU 16000000UL
+#endif
 
 //--UART
 #define UART_IN				PD0 //RX in from Raspberry Pi

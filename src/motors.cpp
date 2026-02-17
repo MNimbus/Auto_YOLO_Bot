@@ -1,9 +1,9 @@
-#include "motor.hpp"
+#include "motors.hpp"
 #include <avr/io.h>
 #include <util/delay.h>
 #include "config.hpp"
 
-Motor::Motor(volatile uint8_t* port_reg, volatile uint8_t* ddr_reg, uint8_t pA, uint8_t pB); {
+Motor::Motor(volatile uint8_t* port_reg, volatile uint8_t* ddr_reg, uint8_t pA, uint8_t pB, volatile uint8_t* pwm_reg) {
 	port = port_reg;
 	ddr = ddr_reg;
 	pinA = pA;
@@ -28,3 +28,4 @@ void Motor::stop() {
 void Motor::setSpeed(uint8_t dutyCycle) {
 	//dutyCycle would be 255 for 100% speed, 127 for 50% speed
 	*pwmPort = dutyCycle; //This sets the Compare register for the PWM timer
+}

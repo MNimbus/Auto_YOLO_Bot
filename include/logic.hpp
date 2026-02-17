@@ -14,11 +14,11 @@ enum RobotState {
 };
 
 //Different drive functions
-void search(Motor& left, Motor& right);
-void moveForward(Motor& left, Motor& right);
-void moveBackward(Motor& left, Motor& right);
-void steerLeft(Motor& left, Motor& right);
-void steerRight(Motor& left, Motor& right);
-void fullStop(Motor& left, Motor& right);
+void search(Motor& fL, Motor& bL, Motor& fR, Motor& bR);
+void moveForward(Motor& fL, Motor& bL, Motor& fR, Motor& bR);
+void moveBackward(Motor& fL, Motor& bL, Motor& fR, Motor& bR);
+void steerLeft(Motor& fL, Motor& bL, Motor& fR, Motor& bR);
+void steerRight(Motor& fL, Motor& bL, Motor& fR, Motor& bR);
+void fullStop(Motor& fL, Motor& bL, Motor& fR, Motor& bR);
 
 #endif
