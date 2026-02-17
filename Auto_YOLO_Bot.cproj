@@ -124,6 +124,10 @@
       <SubType>compile</SubType>
       <Link>config.hpp</Link>
     </None>
+    <None Include="include\logic.hpp">
+      <SubType>compile</SubType>
+      <Link>logic.hpp</Link>
+    </None>
     <None Include="include\motors.hpp">
       <SubType>compile</SubType>
       <Link>motors.hpp</Link>

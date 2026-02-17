@@ -6,15 +6,18 @@
 #include "uart.hpp"
 #include "ultra.hpp"
 
-Motor fL(&PORTD, &DDRB, M1_IN1, M1_IN2);
-Motor bL(&PORTD, &DDRB, M2_IN1, &PORTB, &DDRB, M2_IN2);
-Motor fR(&PORTD, &DDRB, M3_IN1, &PORTC, &DDRC, M3_IN2);
-Motor bR(&PORTC, &DDRC, M4_IN1, M4_IN2);
+//Create objects for each motor, define pins as in the schematic
+//(Data reg, direction reg, Pin 1, Pin 2, PWM reg)
+
+Motor fL(&PORTD, &DDRB, M1_IN1, M1_IN2, &OCR2B);
+Motor bL(&PORTD, &DDRB, M2_IN1, M2_IN2, &OCR0A);
+Motor fR(&PORTB, &DDRB, M3_IN1, M3_IN2, &OCR0B);
+Motor bR(&PORTC, &DDRC, M4_IN1, M4_IN2, &OCR2A);
 
 RobotState currentState = 	SEARCHING;
 
 int main(void) {
-	UART_init();
+	UART_init(UBRR);
 	
 	while(1) {
 		
@@ -33,7 +36,7 @@ int main(void) {
 					else if (message == 'N') currentState = SEARCHING;
 			}
 		}
-				
+		//Switch triggers specific motor logic based on the state decided by UART
 		switch(currentState) {
 			case SEARCHING:
 				search(fL, bL, fR, bR);
@@ -55,3 +58,4 @@ int main(void) {
 				break;
 		}
 	}
+}

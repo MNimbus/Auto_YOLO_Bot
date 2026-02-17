@@ -4,11 +4,11 @@
 
 void search(Motor& fL, Motor& bL, Motor& fR, Motor& bR) {
 	//Left Speed 
-	fL.setSpeed();
-	bL.setSpeed();
+	fL.setSpeed(200);
+	bL.setSpeed(200);
 	//Right Speed 
-	fR.setSpeed();
-	bR.setSpeed();
+	fR.setSpeed(100);
+	bR.setSpeed(100);
 		
 	//Left wheels
 	fL.forward();
@@ -24,11 +24,11 @@ void search(Motor& fL, Motor& bL, Motor& fR, Motor& bR) {
 	
 void moveForward(Motor& fL, Motor& bL, Motor& fR, Motor& bR) {
 	//Left Speed 
-	fL.setSpeed();
-	bL.setSpeed();
+	fL.setSpeed(200);
+	bL.setSpeed(200);
 	//Right Speed 
-	fR.setSpeed();
-	bR.setSpeed();
+	fR.setSpeed(200);
+	bR.setSpeed(200);
 	
 	//Left Wheels
 	fL.forward();
@@ -40,11 +40,11 @@ void moveForward(Motor& fL, Motor& bL, Motor& fR, Motor& bR) {
 	
 void moveBackward(Motor& fL, Motor& bL, Motor& fR, Motor& bR) {
 	//Left Speed 
-	fL.setSpeed();
-	bL.setSpeed();
+	fL.setSpeed(200);
+	bL.setSpeed(200);
 	//Right Speed 
-	fR.setSpeed();
-	bR.setSpeed();
+	fR.setSpeed(200);
+	bR.setSpeed(200);
 	
 	//Left Wheels
 	fL.backward();
@@ -55,11 +55,11 @@ void moveBackward(Motor& fL, Motor& bL, Motor& fR, Motor& bR) {
 	}
 void steerLeft(Motor& fL, Motor& bL, Motor& fR, Motor& bR) {
 	//Left Speed 
-	fL.setSpeed();
-	bL.setSpeed();
+	fL.setSpeed(100);
+	bL.setSpeed(100);
 	//Right Speed 
-	fR.setSpeed();
-	bR.setSpeed();
+	fR.setSpeed(200);
+	bR.setSpeed(200);
 	
 	//Left Wheels
 	fL.forward();
@@ -70,11 +70,11 @@ void steerLeft(Motor& fL, Motor& bL, Motor& fR, Motor& bR) {
 	}
 void steerRight(Motor& fL, Motor& bL, Motor& fR, Motor& bR) {
 	//Left Speed 
-	fL.setSpeed();
-	bL.setSpeed();
+	fL.setSpeed(200);
+	bL.setSpeed(200);
 	//Right Speed 
-	fR.setSpeed();
-	bR.setSpeed();
+	fR.setSpeed(100);
+	bR.setSpeed(100);
 	
 	//Left Wheels
 	fL.forward();
