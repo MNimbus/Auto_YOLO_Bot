@@ -62,11 +62,11 @@ void steerLeft(Motor& fL, Motor& bL, Motor& fR, Motor& bR) {
 	bR.setSpeed();
 	
 	//Left Wheels
-	fL.backward();
-	bL.backward();
+	fL.forward();
+	bL.forward();
 	//Right Wheels
-	fR.backward();
-	bR.backward();
+	fR.forward();
+	bR.forward();
 	}
 void steerRight(Motor& fL, Motor& bL, Motor& fR, Motor& bR) {
 	//Left Speed 
@@ -77,11 +77,11 @@ void steerRight(Motor& fL, Motor& bL, Motor& fR, Motor& bR) {
 	bR.setSpeed();
 	
 	//Left Wheels
-	fL.backward();
-	bL.backward();
+	fL.forward();
+	bL.forward();
 	//Right Wheels
-	fR.backward();
-	bR.backward();	
+	fR.forward();
+	bR.forward();	
 }
 void fullStop(Motor& fL, Motor& bL, Motor& fR, Motor& bR) {
 	//Left Wheels
