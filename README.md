@@ -63,7 +63,6 @@ J -- Object no longer closer than 15cm --> B
     - AI Camera does image recognition, and sends bounding box x,y information to pi
 	- Python script then turns this bounding box information to simple letter UART messages which are sent to the Arduino
     - stream video over udp
-    - capture messages from laptop and forward them over uart to arduino
   - [ ] **Laptop:**
     - receive a videostream from the raspberry pi
 
