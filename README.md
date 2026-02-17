@@ -60,12 +60,10 @@ J -- Object no longer closer than 15cm --> B
   - [x] **UART**
     - take input reading from the rx pin
   - [ ] **Raspberry Pi:**
-    - run camera
+    - AI Camera does image recognition, and sends bounding box x,y information to pi
+	- Python script then turns this bounding box information to simple letter UART messages which are sent to the Arduino
     - stream video over udp
     - capture messages from laptop and forward them over uart to arduino
   - [ ] **Laptop:**
     - receive a videostream from the raspberry pi
-    - process the video in YOLO11n
-    - **Message protocol:**
-      - if i see robot drive (D), if not search (S)
-      - depending on where the robot is either drive right (R) or drive left (L)
+
